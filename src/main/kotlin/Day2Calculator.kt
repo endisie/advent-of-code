@@ -23,7 +23,7 @@ class Day2Calculator : AdventCalculator {
     }
 
     private fun isPasswordValid(password: String, characters: String, minAmount: Int, maxAmount: Int): Boolean {
-        val charAmount = characters.count { password.contains(it) }
+        val charAmount = password.split(characters).size - 1
         return charAmount in minAmount..maxAmount
     }
 }
