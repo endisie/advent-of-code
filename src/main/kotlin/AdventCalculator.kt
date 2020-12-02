@@ -1,5 +1,7 @@
 interface AdventCalculator {
 
-    fun calculate(): Double
+    fun calculatePart1(): Double
+
+    fun calculatePart2(): Double
 
 }
