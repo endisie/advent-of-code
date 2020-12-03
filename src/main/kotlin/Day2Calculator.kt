@@ -1,6 +1,6 @@
 class Day2Calculator : AdventCalculator {
 
-    override fun calculatePart1(): Double {
+    override fun calculatePart1(): Int {
         val text = this::class.java.getResourceAsStream("day2.txt").bufferedReader().readLines()
         var validPasswords = 0
 
@@ -19,10 +19,10 @@ class Day2Calculator : AdventCalculator {
             }
         }
 
-        return validPasswords.toDouble()
+        return validPasswords
     }
 
-    override fun calculatePart2(): Double {
+    override fun calculatePart2(): Int {
         val text = this::class.java.getResourceAsStream("day2.txt").bufferedReader().readLines()
         var validPasswords = 0
 
@@ -41,7 +41,7 @@ class Day2Calculator : AdventCalculator {
             }
         }
 
-        return validPasswords.toDouble()
+        return validPasswords
     }
 
     private fun isPasswordValidPart1(password: String, characters: String, minAmount: Int, maxAmount: Int): Boolean {
