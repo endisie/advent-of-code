@@ -9,7 +9,7 @@ class Day4Calculator : AbstractDayCalculator(4) {
     private val passportId = "pid"
     private val countryId = "cid"
 
-    override fun calculatePart1(): Any {
+    override fun calculatePart1(): Int {
         val passports = getPassports()
         var validPassports = 0
         for (passport in passports) {
@@ -20,7 +20,7 @@ class Day4Calculator : AbstractDayCalculator(4) {
         return validPassports
     }
 
-    override fun calculatePart2(): Any {
+    override fun calculatePart2(): Int {
         val passports = getPassports()
         var validPassports = 0
         for (passport in passports) {
