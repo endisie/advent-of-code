@@ -1,4 +1,4 @@
-class Day3Calculator : AdventCalculator {
+class Day3Calculator : AbstractDayCalculator(3) {
 
     override fun calculatePart1(): Int {
         return calculateSlope(3, 1)
@@ -15,16 +15,16 @@ class Day3Calculator : AdventCalculator {
     }
 
     private fun calculateSlope(slopeX: Int, slopeY: Int): Int {
-        val text = this::class.java.getResourceAsStream("day3.txt").bufferedReader().readLines()
+        val lines = getInputAsList()
 
         var x = 0
         var y = 0
         var trees = 0
-        while (y < text.size) {
-            if (text[y][x] == '#') {
+        while (y < lines.size) {
+            if (lines[y][x] == '#') {
                 trees++
             }
-            x = (x + slopeX) % text[y].length
+            x = (x + slopeX) % lines[y].length
             y += slopeY
         }
         return trees

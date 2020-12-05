@@ -1,4 +1,4 @@
-class Day4Calculator : AdventCalculator {
+class Day4Calculator : AbstractDayCalculator(4) {
 
     private val birthYear = "byr"
     private val issueYear = "iyr"
@@ -32,8 +32,7 @@ class Day4Calculator : AdventCalculator {
     }
 
     private fun getPassports(): List<String> {
-        val text = this::class.java.getResourceAsStream("day4.txt").readBytes().toString(Charsets.UTF_8)
-        return text.split(Regex("(\r\n){2}"))
+        return getInputAsText().split(Regex("(\r\n){2}"))
     }
 
     private fun isValidPassport1(passport: String): Boolean {

@@ -1,7 +1,7 @@
-class Day2Calculator : AdventCalculator {
+class Day2Calculator : AbstractDayCalculator(2) {
 
     override fun calculatePart1(): Int {
-        val text = this::class.java.getResourceAsStream("day2.txt").bufferedReader().readLines()
+        val text = getInputAsList()
         var validPasswords = 0
 
         for (line in text) {
@@ -23,7 +23,7 @@ class Day2Calculator : AdventCalculator {
     }
 
     override fun calculatePart2(): Int {
-        val text = this::class.java.getResourceAsStream("day2.txt").bufferedReader().readLines()
+        val text = getInputAsList()
         var validPasswords = 0
 
         for (line in text) {
