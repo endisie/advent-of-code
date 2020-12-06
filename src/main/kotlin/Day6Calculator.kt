@@ -1,4 +1,4 @@
-class Day6Calculator : AbstractDayCalculator(6) {
+class Day6Calculator : AbstractDayCalculator(6, "Custom Customs") {
 
     override fun calculatePart1(): Int {
         val groups = getInputAsText().split("\r\n\r\n")

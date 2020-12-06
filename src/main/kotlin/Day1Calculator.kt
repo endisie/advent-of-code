@@ -1,4 +1,4 @@
-class Day1Calculator : AbstractDayCalculator(1) {
+class Day1Calculator : AbstractDayCalculator(1, "Report Repair") {
 
     override fun calculatePart1(): Int {
         val numbers = getInputAsList().map { it.toInt() }.toSet()

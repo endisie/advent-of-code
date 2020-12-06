@@ -1,4 +1,4 @@
-class Day3Calculator : AbstractDayCalculator(3) {
+class Day3Calculator : AbstractDayCalculator(3, "Toboggan Trajectory") {
 
     override fun calculatePart1(): Int {
         return calculateSlope(3, 1)

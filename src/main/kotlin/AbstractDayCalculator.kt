@@ -1,4 +1,4 @@
-abstract class AbstractDayCalculator(private val day: Number) {
+abstract class AbstractDayCalculator(private val day: Number, private val title: String) {
 
     abstract fun calculatePart1(): Any
 
@@ -10,6 +10,13 @@ abstract class AbstractDayCalculator(private val day: Number) {
 
     fun getInputAsText(): String {
         return this::class.java.getResourceAsStream("day$day.txt").readBytes().toString(Charsets.UTF_8)
+    }
+
+    fun printResults() {
+        println("--- Day $day: $title ---")
+        println("Part 1: ${calculatePart1()}")
+        println("Part 2: ${calculatePart2()}")
+        println()
     }
 
 }

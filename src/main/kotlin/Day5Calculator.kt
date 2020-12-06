@@ -1,4 +1,4 @@
-class Day5Calculator : AbstractDayCalculator(5) {
+class Day5Calculator : AbstractDayCalculator(5, "Binary Boarding") {
 
     override fun calculatePart1(): Int {
         return getInputAsList()

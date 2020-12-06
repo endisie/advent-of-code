@@ -1,4 +1,4 @@
-class Day2Calculator : AbstractDayCalculator(2) {
+class Day2Calculator : AbstractDayCalculator(2, "Password Philosophy") {
 
     override fun calculatePart1(): Int {
         val text = getInputAsList()

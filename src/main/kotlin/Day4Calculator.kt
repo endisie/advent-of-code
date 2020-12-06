@@ -1,4 +1,4 @@
-class Day4Calculator : AbstractDayCalculator(4) {
+class Day4Calculator : AbstractDayCalculator(4, "Passport Processing") {
 
     private val birthYear = "byr"
     private val issueYear = "iyr"
