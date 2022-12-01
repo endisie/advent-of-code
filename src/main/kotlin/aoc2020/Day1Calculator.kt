@@ -1,3 +1,7 @@
+package aoc2020
+
+import AbstractDayCalculator
+
 class Day1Calculator : AbstractDayCalculator(1, "Report Repair") {
 
     override fun calculatePart1(): Int {

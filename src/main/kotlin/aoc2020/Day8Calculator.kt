@@ -1,3 +1,7 @@
+package aoc2020
+
+import AbstractDayCalculator
+
 class Day8Calculator : AbstractDayCalculator(8, "Handheld Halting") {
 
     override fun calculatePart1(): Int {

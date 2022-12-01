@@ -1,3 +1,7 @@
+package aoc2020
+
+import AbstractDayCalculator
+
 class Day2Calculator : AbstractDayCalculator(2, "Password Philosophy") {
 
     override fun calculatePart1(): Int {

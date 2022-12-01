@@ -1,3 +1,7 @@
+package aoc2020
+
+import AbstractDayCalculator
+
 class Day4Calculator : AbstractDayCalculator(4, "Passport Processing") {
 
     private val birthYear = "byr"

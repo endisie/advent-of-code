@@ -1,3 +1,7 @@
+package aoc2020
+
+import AbstractDayCalculator
+
 class Day6Calculator : AbstractDayCalculator(6, "Custom Customs") {
 
     override fun calculatePart1(): Int {

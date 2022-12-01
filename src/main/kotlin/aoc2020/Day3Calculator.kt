@@ -1,3 +1,7 @@
+package aoc2020
+
+import AbstractDayCalculator
+
 class Day3Calculator : AbstractDayCalculator(3, "Toboggan Trajectory") {
 
     override fun calculatePart1(): Int {
