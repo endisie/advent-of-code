@@ -2,7 +2,7 @@ package aoc2020
 
 import AbstractDayCalculator
 
-class Day2Calculator : AbstractDayCalculator(2, "Password Philosophy") {
+class Day2Calculator : AbstractDayCalculator(2022, 2, "Password Philosophy") {
 
     override fun calculatePart1(): Int {
         val text = getInputAsList()

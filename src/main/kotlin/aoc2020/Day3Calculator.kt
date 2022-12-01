@@ -2,7 +2,7 @@ package aoc2020
 
 import AbstractDayCalculator
 
-class Day3Calculator : AbstractDayCalculator(3, "Toboggan Trajectory") {
+class Day3Calculator : AbstractDayCalculator(2022, 3, "Toboggan Trajectory") {
 
     override fun calculatePart1(): Int {
         return calculateSlope(3, 1)

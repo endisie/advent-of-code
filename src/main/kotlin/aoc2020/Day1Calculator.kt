@@ -2,7 +2,7 @@ package aoc2020
 
 import AbstractDayCalculator
 
-class Day1Calculator : AbstractDayCalculator(1, "Report Repair") {
+class Day1Calculator : AbstractDayCalculator(2022, 1, "Report Repair") {
 
     override fun calculatePart1(): Int {
         val numbers = getInputAsList().map { it.toInt() }.toSet()

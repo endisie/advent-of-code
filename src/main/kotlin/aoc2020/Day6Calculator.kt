@@ -2,7 +2,7 @@ package aoc2020
 
 import AbstractDayCalculator
 
-class Day6Calculator : AbstractDayCalculator(6, "Custom Customs") {
+class Day6Calculator : AbstractDayCalculator(2022, 6, "Custom Customs") {
 
     override fun calculatePart1(): Int {
         val groups = getInputAsText().split("\r\n\r\n")

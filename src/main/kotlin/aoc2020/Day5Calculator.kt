@@ -2,7 +2,7 @@ package aoc2020
 
 import AbstractDayCalculator
 
-class Day5Calculator : AbstractDayCalculator(5, "Binary Boarding") {
+class Day5Calculator : AbstractDayCalculator(2022, 5, "Binary Boarding") {
 
     override fun calculatePart1(): Int {
         return getInputAsList()

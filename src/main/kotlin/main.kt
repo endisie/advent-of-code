@@ -1,7 +1,8 @@
+import aoc2022.Day1Calculator
+
 fun main() {
-    for (day in 1..1) {
-        val dayCalculator: AbstractDayCalculator =
-            Class.forName("Day${day}Calculator").newInstance() as AbstractDayCalculator
-        dayCalculator.printResults()
-    }
+    val day1 = Day1Calculator()
+    val advent = listOf(day1)
+    
+    advent.forEach { it.printResults() }
 }
