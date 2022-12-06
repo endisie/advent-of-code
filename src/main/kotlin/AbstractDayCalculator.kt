@@ -9,7 +9,6 @@ abstract class AbstractDayCalculator(private val year: Number, private val day: 
     }
 
     fun getInputAsText(): String {
-        print(year)
         return this::class.java.getResourceAsStream("/aoc$year/day$day.txt").readBytes().toString(Charsets.UTF_8)
     }
 
